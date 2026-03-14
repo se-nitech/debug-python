@@ -3,23 +3,15 @@ def myfunc(x, y):
     return z
 
 
-def myfunc_2(a):
-    for i in range(5):
-        myfunc(a[i], a[i + 1])
-
-
-def myfunc_3(a):
-    for i in range(5):
-        myfunc(a[i], a[i + 1])
-
-
 def main():
     a = [1, 2, 3, 4, 5]
-    for _ in range(100):
-        myfunc_2(a)
-    for _ in range(300):
-        myfunc_3(a)
+
+    c = a[1] + a[5]
+    b = c + a[1]
+    b = myfunc(b, c)
+
+    print(f"b={b}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
