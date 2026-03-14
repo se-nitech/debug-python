@@ -1,4 +1,4 @@
-# docker composeでgdbを使うサンプルコード
+# docker composeでpdbを使うサンプルコード
 
 起動
 
@@ -7,31 +7,29 @@ docker compose build
 docker compose up -d
 ```
 
-コンパイルと実行
+実行
 
 ```bash
-docker compose exec mygcc gcc -g main.c
-docker compose exec mygcc ./a.out
+docker compose exec mypython python main.py
 ```
 
-gdbでデバッグ
+pdbでデバッグ
 
 ```bash
-docker compose exec mygcc gdb ./a.out
+docker compose exec mypython python -m pdb main.py
 ```
 
-cppcheckでlint（静的解析）
+flake8でlint（静的解析）
 
 ```bash
-docker compose exec mygcc cppcheck main.c
+docker compose exec mypython flake8 main.py
 ```
 
-gprofでプロファイリング
+line_profilerでプロファイリング
 
 ```bash
-docker compose exec mygcc gcc -g -pg main_gprof.c -o main_gprof
-docker compose exec mygcc ./main_gprof
-docker compose exec mygcc gprof -b main_gprof gmon.out
+docker compose exec mypython kernprof -l main_profile.py
+docker compose exec mypython python -m line_profiler main_profile.py.lprof
 ```
 
 停止

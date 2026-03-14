@@ -1,7 +1,7 @@
 from line_profiler import profile
 
 SIZE = 2026
-REPEAT = 2000
+REPEAT = 20
 
 
 @profile

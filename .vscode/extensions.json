@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "jbenden.c-cpp-flylint",
         "mhutchie.git-graph",
         "ms-ceintl.vscode-language-pack-ja",
         "ms-python.autopep8",
@@ -10,10 +9,5 @@
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-vscode-remote.vscode-remote-extensionpack",
-        "ms-vscode.cpp-devtools",
-        "ms-vscode.cpptools-extension-pack",
-        "ms-vscode.cpptools-themes",
-        "ms-vscode.cpptools",
-        "vscjava.vscode-java-pack",
     ]
 }

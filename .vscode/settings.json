@@ -13,22 +13,9 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     //
-    "c-cpp-flylint.clang.enable": true,
-    "c-cpp-flylint.cppcheck.enable": true,
-    "c-cpp-flylint.lizard.enable": false,
-    "c-cpp-flylint.flawfinder.enable": false,
-    "c-cpp-flylint.flexelint.enable": false,
-    "c-cpp-flylint.run": "onType",
-    "c-cpp-flylint.language": "c",
-    "c-cpp-flylint.standard": [
-        "c11"
-    ],
-    "[c]": {
-        // "editor.defaultFormatter": "xaver.clang-format",
-        "editor.defaultFormatter": "ms-vscode.cpptools",
-    },
-    "[cpp]": {
-        // "editor.defaultFormatter": "xaver.clang-format",
-        "editor.defaultFormatter": "ms-vscode.cpptools",
-    },
+    "[python]": {
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+        // "editor.defaultFoldingRangeProvider": "ms-python.python",
+        "editor.defaultFormatter": "ms-python.autopep8",
+    }
 }
